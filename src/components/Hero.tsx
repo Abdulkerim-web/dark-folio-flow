@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion, Variants } from 'framer-motion';
 import { ArrowRight, Github, Linkedin, Mail, MousePointer2 } from 'lucide-react';
+import profileImage from '@/assets/profile.jpg';
 
 const Hero: React.FC = () => {
   const titleVariants: Variants = {
@@ -99,7 +100,7 @@ const Hero: React.FC = () => {
             
             <div className="w-full h-full overflow-hidden rounded-2xl shadow-2xl">
               <img
-                src="https://media.githubusercontent.com/media/Abdulkerim-web/dark-folio-flow/main/public/profile.jpg"
+                src={profileImage}
                 alt="Profile"
                 className="w-full h-full object-cover"
               />
