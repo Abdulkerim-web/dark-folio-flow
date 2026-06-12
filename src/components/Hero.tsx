@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion, Variants } from 'framer-motion';
 import { ArrowRight, Github, Linkedin, Mail, MousePointer2 } from 'lucide-react';
-import profileImage from '/public/7043-removebg-preview.jpg';
+import profileImage from '/7043-removebg-preview.jpg';
 
 const Hero: React.FC = () => {
   const titleVariants: Variants = {
