@@ -97,11 +97,15 @@ const Hero: React.FC = () => {
             <div className="absolute inset-0 bg-[#E74C3C] translate-x-6 translate-y-6 -z-10 rounded-2xl opacity-20" />
             <div className="absolute inset-0 border-2 border-[#E74C3C] translate-x-3 translate-y-3 -z-10 rounded-2xl" />
             
-            <div className="w-full h-full overflow-hidden rounded-2xl shadow-2xl">
+            <div className="w-full h-full overflow-hidden rounded-2xl shadow-2xl bg-[#0a0a0a]">
               <img
-                src="/7043-removebg-preview.jpg"
+                src={`${import.meta.env.BASE_URL}7043-removebg-preview.jpg`}
                 alt="Profile"
                 className="w-full h-full object-cover"
+                onError={(e) => {
+                  console.error('Image failed to load from:', e.currentTarget.src);
+                  e.currentTarget.style.display = 'none';
+                }}
               />
             </div>
 
