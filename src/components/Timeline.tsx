@@ -55,24 +55,24 @@ const TimelineItem: React.FC<{
 const Timeline: React.FC = () => {
   const [experiences, setExperiences] = useState([
     {
-      title: "Senior Software Engineer",
-      organization: "Global Tech Solutions",
-      period: "2023 - Present",
-      description: "Leading a team of 5 developers to build high-scale React applications. Architected a micro-frontend solution that improved build times by 40%.",
-      type: "work" as const,
+      title: "Bachelor of Information System",
+      organization: "University Name",
+      period: "2020 - 2024",
+      description: "Specialized in Information Systems and Software Development. Completed relevant coursework in databases, networking, and web technologies.",
+      type: "edu" as const,
     },
     {
       title: "Full Stack Developer",
-      organization: "Creative Digital Agency",
-      period: "2021 - 2023",
-      description: "Built responsive web platforms for fortune 500 clients. Implemented complex animations and real-time features using WebSockets.",
+      organization: "Tech Company",
+      period: "2025 - Present",
+      description: "Building responsive web platforms and implementing complex features using modern web technologies and best practices.",
       type: "work" as const,
     },
     {
-      title: "Masters in Computer Science",
-      organization: "Stanford University",
-      period: "2019 - 2021",
-      description: "Specialized in AI and Distributed Systems. Research published in international journals regarding cloud scalability.",
+      title: "Bachelor of Business Management",
+      organization: "University Name",
+      period: "2020 - 2024",
+      description: "Studied Business Management principles, organizational leadership, and strategic management techniques.",
       type: "edu" as const,
     },
   ]);

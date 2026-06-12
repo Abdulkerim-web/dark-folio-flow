@@ -64,7 +64,7 @@ const Contact: React.FC = () => {
           </div>
           <div>
             <p className="text-sm font-black uppercase text-gray-500 tracking-widest">Location</p>
-            <p className="text-lg">San Francisco, CA</p>
+            <p className="text-lg">Addis Ababa</p>
           </div>
         </div>
 
@@ -74,7 +74,7 @@ const Contact: React.FC = () => {
           </div>
           <div>
             <p className="text-sm font-black uppercase text-gray-500 tracking-widest">Email</p>
-            <p className="text-lg">hello@portfolio.com</p>
+            <p className="text-lg">aabdulmejid5@gmail.com</p>
           </div>
         </div>
 
@@ -84,7 +84,7 @@ const Contact: React.FC = () => {
           </div>
           <div>
             <p className="text-sm font-black uppercase text-gray-500 tracking-widest">Call</p>
-            <p className="text-lg">+1 (555) 000-0000</p>
+            <p className="text-lg">+251911264314</p>
           </div>
         </div>
       </motion.div>
@@ -160,7 +160,7 @@ const Contact: React.FC = () => {
             whileTap={{ scale: 0.98 }}
             disabled={isSubmitting}
             type="submit"
-            className="w-full bg-[#E74C3C] text-white font-black py-6 rounded-2xl flex items-center justify-center gap-3 hover:bg-[#c0392b] transition-all disabled:opacity-50 shadow-lg shadow-[#E74C3C]/20"
+            className="w-full bg-[#E74C3C] text-white font-black py-6 rounded-2xl flex items-center justify-center gap-3 hover:bg-[#c0392b] transition-all disabled:opacity-50 shadow-lg shadow-[#E74C3C]/30"
           >
             {isSubmitting ? 'TRANSMITTING...' : (
               <>

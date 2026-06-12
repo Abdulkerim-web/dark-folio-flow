@@ -70,15 +70,15 @@ const iconMap: Record<string, React.ReactNode> = {
 
 const Skills: React.FC = () => {
   const [skills, setSkills] = useState<SkillItem[]>([
-    { name: 'Architecture', level: 95, icon: <Terminal size={32} /> },
+    { name: 'Data Analyst', level: 90, icon: <Database size={32} /> },
     { name: 'Frontend', level: 98, icon: <Layout size={32} /> },
     { name: 'Backend', level: 90, icon: <Server size={32} /> },
     { name: 'Mobile', level: 85, icon: <Smartphone size={32} /> },
     { name: 'Data Science', level: 82, icon: <Database size={32} /> },
-    { name: 'DevOps', level: 88, icon: <Cpu size={32} /> },
+    { name: 'Machine Learning', level: 88, icon: <Cpu size={32} /> },
     { name: 'Networking', level: 75, icon: <Globe size={32} /> },
     { name: 'Security', level: 80, icon: <Lock size={32} /> },
-    { name: 'Typescript', level: 95, icon: <Code2 size={32} /> },
+    { name: 'JavaScript', level: 95, icon: <Code2 size={32} /> },
   ]);
 
   useEffect(() => {
@@ -95,7 +95,7 @@ const Skills: React.FC = () => {
       if (data && data.length > 0) {
         setSkills(data.map(s => ({
           name: s.name,
-          level: 90, // Default level if not in DB
+          level: 90,
           icon: iconMap[s.icon_name] || <Code2 size={32} />,
         })));
       }
