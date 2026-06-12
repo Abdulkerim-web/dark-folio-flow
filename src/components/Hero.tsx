@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion, Variants } from 'framer-motion';
 import { ArrowRight, Github, Linkedin, Mail, MousePointer2 } from 'lucide-react';
-import profileImage from '/7043-removebg-preview.jpg';
 
 const Hero: React.FC = () => {
   const titleVariants: Variants = {
@@ -100,7 +99,7 @@ const Hero: React.FC = () => {
             
             <div className="w-full h-full overflow-hidden rounded-2xl shadow-2xl">
               <img
-                src={profileImage}
+                src="7043-removebg-preview.jpg"
                 alt="Profile"
                 className="w-full h-full object-cover"
               />
