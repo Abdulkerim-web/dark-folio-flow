@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
           <motion.div variants={childVariants} className="flex items-center gap-2 mb-6">
             <div className="w-10 h-[2px] bg-[#E74C3C]" />
             <span className="text-[#E74C3C] font-semibold tracking-widest uppercase">
-              Available for work
+              Open for Opportunities
             </span>
           </motion.div>
 
@@ -46,9 +46,9 @@ const Hero: React.FC = () => {
             variants={childVariants}
             className="text-5xl md:text-8xl font-black leading-[1.1] mb-8 tracking-tighter"
           >
-            Digital <br />
+            Innovative <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E74C3C] via-white to-gray-500">
-              Visionary.
+              Problem Solver.
             </span>
           </motion.h1>
 
@@ -56,7 +56,7 @@ const Hero: React.FC = () => {
             variants={childVariants}
             className="text-gray-400 text-lg md:text-2xl mb-12 max-w-lg leading-relaxed font-light"
           >
-            Building high-performance web applications with precision and passion. Currently bridging the gap between design and scalable code.
+            Transforming ideas into elegant, high-performance digital solutions. Specialized in full-stack development with a passion for clean code and exceptional user experiences.
           </motion.p>
           
           <motion.div variants={childVariants} className="flex flex-wrap gap-6 items-center">
@@ -64,7 +64,7 @@ const Hero: React.FC = () => {
               href="#projects"
               className="px-10 py-5 bg-[#E74C3C] text-white font-black rounded-full flex items-center gap-3 hover:scale-105 active:scale-95 transition-all shadow-[0_10px_30px_-10px_rgba(231,76,60,0.5)]"
             >
-              PROJECTS
+              VIEW PORTFOLIO
               <ArrowRight className="group-hover:translate-x-1 transition-transform" size={22} />
             </a>
             <div className="flex gap-6 items-center">
@@ -99,13 +99,9 @@ const Hero: React.FC = () => {
             
             <div className="w-full h-full overflow-hidden rounded-2xl shadow-2xl bg-[#0a0a0a]">
               <img
-                src={`${import.meta.env.BASE_URL}7043-removebg-preview.jpg`}
+                src="/profile.jpg"
                 alt="Profile"
                 className="w-full h-full object-cover"
-                onError={(e) => {
-                  console.error('Image failed to load from:', e.currentTarget.src);
-                  e.currentTarget.style.display = 'none';
-                }}
               />
             </div>
 
@@ -120,7 +116,7 @@ const Hero: React.FC = () => {
                 </div>
                 <div>
                   <p className="text-xs text-gray-400 uppercase tracking-widest">Status</p>
-                  <p className="text-sm font-bold">Open for Collaboration</p>
+                  <p className="text-sm font-bold">Ready to Collaborate</p>
                 </div>
               </div>
             </motion.div>
