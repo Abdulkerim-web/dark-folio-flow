@@ -99,7 +99,7 @@ const Hero: React.FC = () => {
             
             <div className="w-full h-full overflow-hidden rounded-2xl shadow-2xl">
               <img
-                src={new URL('/profile.jpg', import.meta.url).href}
+                src="/7043-removebg-preview.jpg"
                 alt="Profile"
                 className="w-full h-full object-cover"
               />
