@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
           </div>
 
           <p className="text-gray-600 text-sm font-medium order-3 md:order-2">
-            &copy; {new Date().getFullYear()} Alex Johnson. All Rights Reserved.
+            &copy; {new Date().getFullYear()} Abdulkerim Abdulmejid. All Rights Reserved.
           </p>
 
           <button 
