@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
               <ArrowRight className="group-hover:translate-x-1 transition-transform" size={22} />
             </a>
             <div className="flex gap-6 items-center">
-              <a href="#" className="p-3 text-gray-400 hover:text-white hover:scale-110 transition-all border border-transparent hover:border-white/10 rounded-full">
+              <a href="https://github.com/Abdulkerim-web" target="_blank" rel="noopener noreferrer" className="p-3 text-gray-400 hover:text-white hover:scale-110 transition-all border border-transparent hover:border-white/10 rounded-full">
                 <Github size={26} />
               </a>
               <a href="#" className="p-3 text-gray-400 hover:text-white hover:scale-110 transition-all border border-transparent hover:border-white/10 rounded-full">
