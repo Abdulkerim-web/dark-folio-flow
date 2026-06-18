@@ -3,15 +3,23 @@ import { createClient } from '@supabase/supabase-js'
 import dotenv from 'dotenv'
 import fs from 'fs'
 import path from 'path'
+import ws from 'ws'
 
 dotenv.config({ path: '.env.local' })
 
-const supabaseUrl = process.env.SUPABASE_URL;
-const supabaseAnonKey = process.env.SUPABASE_ANON_KEY;
+const supabaseUrl = process.env.VITE_SUPABASE_URL;
+const supabaseAnonKey = process.env.VITE_SUPABASE_ANON_KEY;
 
-const supabase = createClient(supabaseUrl, supabaseAnonKey)
+const supabase = createClient(supabaseUrl, supabaseAnonKey, {
+  global: {
+    fetch: fetch,
+  },
+  realtime: {
+    transport: ws,
+  },
+})
 
-async function checkTableExists(tableName: string): Promise<boolean> {
+async function checkTableExists(tableName) {
   try {
     const { data, error } = await supabase
       .from(tableName)
