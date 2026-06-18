@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
             variants={childVariants}
             className="text-5xl md:text-8xl font-black leading-[1.1] mb-8 tracking-tighter"
           >
-            Know you update on bachelor of information system
+            Innovate your tech journey
           </motion.h1>
 
           <motion.p 

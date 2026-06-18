@@ -70,7 +70,7 @@ const Timeline: React.FC = () => {
     },
     {
       title: "Bachelor of Business Management",
-      organization: "Gokden starts",
+      organization: "Golden stars",
       period: "2020 - 2024",
       description: "Advanced Business Management program focusing on strategic leadership, organizational behavior, and innovative business solutions. Developed expertise in project management, financial analysis, and entrepreneurial strategies.",
       type: "edu" as const,
