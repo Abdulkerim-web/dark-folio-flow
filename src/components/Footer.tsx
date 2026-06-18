@@ -23,41 +23,41 @@ const Footer: React.FC = () => {
              </p>
            </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-16">
-             <div className="space-y-6">
-                <h4 className="text-xs font-black uppercase tracking-[0.2em] text-[#E74C3C]">Navigation</h4>
-                <ul className="space-y-4 text-gray-400 font-medium">
-                   <li><a href="#home" className="hover:text-white transition-colors">Home</a></li>
-                   <li><a href="#experience" className="hover:text-white transition-colors">Experience</a></li>
-                   <li><a href="#projects" className="hover:text-white transition-colors">Projects</a></li>
-                </ul>
-             </div>
-             <div className="space-y-6">
-                <h4 className="text-xs font-black uppercase tracking-[0.2em] text-[#E74C3C]">Social</h4>
-                <ul className="space-y-4 text-gray-400 font-medium">
-                   <li><a href="#" className="hover:text-white transition-colors">LinkedIn</a></li>
-                   <li><a href="#" className="hover:text-white transition-colors">GitHub</a></li>
-                   <li><a href="#" className="hover:text-white transition-colors">Twitter</a></li>
-                </ul>
-             </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8 pt-12 border-t border-white/5">
-          <div className="flex gap-6">
-            <motion.a whileHover={{ y: -5 }} href="#" className="text-gray-400 hover:text-[#E74C3C] transition-colors">
-              <Github size={24} />
-            </motion.a>
-            <motion.a whileHover={{ y: -5 }} href="#" className="text-gray-400 hover:text-[#E74C3C] transition-colors">
-              <Linkedin size={24} />
-            </motion.a>
-            <motion.a whileHover={{ y: -5 }} href="#" className="text-gray-400 hover:text-[#E74C3C] transition-colors">
-              <Twitter size={24} />
-            </motion.a>
-            <motion.a whileHover={{ y: -5 }} href="#" className="text-gray-400 hover:text-[#E74C3C] transition-colors">
-              <Mail size={24} />
-            </motion.a>
-          </div>
+           <div className="grid grid-cols-2 md:grid-cols-3 gap-16">
+              <div className="space-y-6">
+                 <h4 className="text-xs font-black uppercase tracking-[0.2em] text-[#E74C3C]">Navigation</h4>
+                 <ul className="space-y-4 text-gray-400 font-medium">
+                    <li><a href="#home" className="hover:text-white transition-colors">Home</a></li>
+                    <li><a href="#experience" className="hover:text-white transition-colors">Experience</a></li>
+                    <li><a href="#projects" className="hover:text-white transition-colors">Projects</a></li>
+                 </ul>
+              </div>
+              <div className="space-y-6">
+                 <h4 className="text-xs font-black uppercase tracking-[0.2em] text-[#E74C3C]">Social</h4>
+                 <ul className="space-y-4 text-gray-400 font-medium">
+                    <li><a href="#" className="hover:text-white transition-colors">LinkedIn</a></li>
+                    <li><a href="https://github.com/Abdulkerim-web" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub</a></li>
+                    <li><a href="#" className="hover:text-white transition-colors">Twitter</a></li>
+                 </ul>
+              </div>
+           </div>
+         </div>
+ 
+         <div className="flex flex-col md:flex-row justify-between items-center gap-8 pt-12 border-t border-white/5">
+           <div className="flex gap-6">
+             <motion.a whileHover={{ y: -5 }} href="https://github.com/Abdulkerim-web" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#E74C3C] transition-colors">
+               <Github size={24} />
+             </motion.a>
+             <motion.a whileHover={{ y: -5 }} href="#" className="text-gray-400 hover:text-[#E74C3C] transition-colors">
+               <Linkedin size={24} />
+             </motion.a>
+             <motion.a whileHover={{ y: -5 }} href="#" className="text-gray-400 hover:text-[#E74C3C] transition-colors">
+               <Twitter size={24} />
+             </motion.a>
+             <motion.a whileHover={{ y: -5 }} href="#" className="text-gray-400 hover:text-[#E74C3C] transition-colors">
+               <Mail size={24} />
+             </motion.a>
+           </div>
 
           <p className="text-gray-600 text-sm font-medium order-3 md:order-2">
             &copy; {new Date().getFullYear()} Abdulkerim Abdulmejid. All Rights Reserved.
