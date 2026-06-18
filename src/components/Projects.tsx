@@ -13,14 +13,6 @@ const projectsData = [
     github: '#',
   },
   {
-    title: 'Pulse Fitness',
-    description: 'AI-driven fitness ecosystem that synchronizes workout data across devices and provides real-time biomechanical feedback.',
-    image: 'https://storage.googleapis.com/dala-prod-public-storage/generated-images/76f71dc4-5bb4-40c1-b93a-5a85974e5315/project-fitness-a8f362b9-1774510121220.webp',
-    tags: ['React Native', 'TensorFlow', 'PostgreSQL'],
-    demo: '#',
-    github: '#',
-  },
-  {
     title: 'Vogue E-Shop',
     description: 'High-end fashion marketplace with integrated AI styling and ultra-fast global delivery checkout system.',
     image: 'https://storage.googleapis.com/dala-prod-public-storage/generated-images/76f71dc4-5bb4-40c1-b93a-5a85974e5315/project-ecommerce-a2e438e5-1774510121465.webp',
