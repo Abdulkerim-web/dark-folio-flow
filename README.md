@@ -1,6 +1,6 @@
 # React + Vite + shadcn/ui Starter Template
 
-A modern React starter template built with Vite, TypeScript, Tailwind CSS, and shadcn/ui components.
+A modern React starter template built with Vite, TypeScript, Tailwind CSS, and shadcn/ui components with Supabase integration.
 
 ## 🚀 Features
 
@@ -20,31 +20,178 @@ A modern React starter template built with Vite, TypeScript, Tailwind CSS, and s
 - Badge
 - Dialog
 - And more...
-
 ## 🛠️ Getting Started
 
 1. **Install dependencies**
 
    ```bash
-   npm install
+   bun install
    ```
 
 2. **Start development server**
 
    ```bash
-   npm run dev
+   bun run dev
    ```
 
 3. **Build for production**
 
    ```bash
-   npm run build
+   bun run build
    ```
 
 4. **Preview production build**
+
    ```bash
-   npm run preview
+   bun run preview
    ```
+
+## 🗄️ Supabase Setup
+
+### 1. Configure Environment Variables
+
+Update the `.env.local` file with your Supabase credentials:
+
+```bash
+SUPABASE_URL=https://slozrkqbameojqilqynw.supabase.co
+SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNsb3pya3FiYW1lb2pxaWxxeW53Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE3NjQ2MjgsImV4cCI6MjA5NzM0MDYyOH0.6Cmw2ah9HGLfNOPv95wxRr8nGfHSmm85rKOtAn_Jz88
+```
+
+### 2. Create the contact_submissions Table
+
+**Option A: Run the SQL script (Recommended)**
+
+```bash
+node create-table.js
+```
+
+This will output the SQL you need to run in your Supabase SQL editor.
+
+**Option B: Run the migration script**
+
+```bash
+node apply-migration.js
+```
+
+This script will:
+1. Check if the table exists
+2. If not, provide clear instructions on how to create it
+3. Insert test data if the table exists
+
+**Option C: Manual SQL**
+
+Run this SQL directly in your Supabase SQL editor:
+
+```sql
+-- Create contact_submissions table
+CREATE TABLE public.contact_submissions (
+    id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL,
+    name TEXT NOT NULL,
+    email TEXT NOT NULL,
+    subject TEXT NOT NULL,
+    message TEXT NOT NULL
+);
+
+ALTER TABLE public.contact_submissions ENABLE ROW LEVEL SECURITY;
+
+-- Allow public INSERT for contact submissions
+CREATE POLICY "Allow public insert on contact_submissions"
+ON public.contact_submissions
+FOR INSERT
+TO public
+WITH CHECK (true);
+```
+
+### 3. Test the Connection
+
+Run the migration script to verify the connection:
+
+```bash
+node apply-migration.js
+```
+
+### 3. Vercel Deployment
+
+Add these environment variables to your Vercel project:
+
+- `VITE_SUPABASE_URL` - `https://slozrkqbameojqilqynw.supabase.co`
+- `VITE_SUPABASE_ANON_KEY` - `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...` (first 50 chars are sufficient)
+
+### 4. Database Setup
+
+The `contact_submissions` table is already created in the migration file (`supabase/migrations/20240520120000_init_portfolio_tables.sql`). If you need to recreate it, run this SQL in your Supabase SQL editor:
+
+```sql
+-- Create contact_submissions table
+CREATE TABLE public.contact_submissions (
+    id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL,
+    name TEXT NOT NULL,
+    email TEXT NOT NULL,
+    subject TEXT NOT NULL,
+    message TEXT NOT NULL
+);
+
+ALTER TABLE public.contact_submissions ENABLE ROW LEVEL SECURITY;
+
+-- Allow public INSERT for contact submissions
+CREATE POLICY "Allow public insert on contact_submissions"
+ON public.contact_submissions
+FOR INSERT
+TO public
+WITH CHECK (true);
+```
+
+### 3. Database Setup
+
+The `contact_submissions` table is already created in the migration file (`supabase/migrations/20240520120000_init_portfolio_tables.sql`). If you need to recreate it, run this SQL in your Supabase SQL editor:
+
+```sql
+-- Create contact_submissions table
+CREATE TABLE public.contact_submissions (
+    id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL,
+    name TEXT NOT NULL,
+    email TEXT NOT NULL,
+    subject TEXT NOT NULL,
+    message TEXT NOT NULL
+);
+
+ALTER TABLE public.contact_submissions ENABLE ROW LEVEL SECURITY;
+
+-- Allow public INSERT for contact submissions
+CREATE POLICY "Allow public insert on contact_submissions"
+ON public.contact_submissions
+FOR INSERT
+TO public
+WITH CHECK (true);
+```
+
+### 4. Vercel Deployment
+
+Add these environment variables to your Vercel project:
+
+- `VITE_SUPABASE_URL` - Your Supabase project URL
+- `VITE_SUPABASE_ANON_KEY` - Your Supabase anon key
+
+The project is configured for Vercel deployment with `vercel.json`.
+
+## 📁 Project Structure
+
+```
+/src/
+  ├── components/
+  │   └── ui/              # shadcn/ui components
+  ├── lib/
+  │   └── utils.ts         # Utility functions
+  ├── App.tsx              # Main application component
+  ├── index.css            # Global styles with Tailwind
+  ├── main.tsx             # Application entry point
+  └── integrations/
+      └── supabase/         # Supabase integration
+          └── client.ts    # Supabase client configuration
+```
 
 ## 📁 Project Structure
 
