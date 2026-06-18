@@ -246,6 +246,11 @@ Feel free to submit issues and enhancement requests!
 
 **⚡ Powered by [Dala](https://dala.gebeya.com)** - The AI-powered web development platform that helps you build full-stack applications faster.
 
+## 🔗 Links
+
+- **GitHub Repository**: [dark-folio-flow](https://github.com/Abdulkerim-web/dark-folio-flow)
+- **GitHub Profile**: [Abdulkerim-web](https://github.com/Abdulkerim-web)
+
 ---
 
 ## 🤖 What is Dala?
