@@ -56,6 +56,9 @@ const Navbar: React.FC = () => {
               </motion.a>
             ))}
           </div>
+          <div className="hidden md:block absolute top-20 right-6 bg-black/90 backdrop-blur-xl border border-white/10 rounded-xl px-6 py-4 text-xs text-gray-400">
+            Information Systems & Business Management Professional
+          </div>
 
           {/* Mobile Menu Toggle */}
           <button

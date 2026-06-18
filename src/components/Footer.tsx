@@ -11,17 +11,17 @@ const Footer: React.FC = () => {
     <footer className="bg-black border-t border-white/5 pt-24 pb-12 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-20">
-          <div className="max-w-md">
-            <a href="#" className="text-3xl font-black tracking-tighter flex items-center gap-3 mb-6">
+<div className="max-w-md">
+             <a href="#" className="text-3xl font-black tracking-tighter flex items-center gap-3 mb-6">
                <div className="w-10 h-10 bg-[#E74C3C] rounded-xl flex items-center justify-center">
                  <span className="text-sm">P</span>
                </div>
-              PORT<span className="text-[#E74C3C]">FOLIO</span>
-            </a>
-            <p className="text-gray-500 text-lg leading-relaxed font-light">
-              Crafting digital excellence through minimalist design and robust engineering. Always pushing the boundaries of what's possible on the web.
-            </p>
-          </div>
+               PORT<span className="text-[#E74C3C]">FOLIO</span>
+             </a>
+             <p className="text-gray-500 text-lg leading-relaxed font-light">
+               Showcasing expertise in Information Systems and Business Management through innovative digital solutions and comprehensive project development.
+             </p>
+           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-16">
              <div className="space-y-6">

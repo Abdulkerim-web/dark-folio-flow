@@ -56,9 +56,9 @@ const Timeline: React.FC = () => {
   const [experiences, setExperiences] = useState([
     {
       title: "Bachelor of Information System",
-      organization: "University Name",
+      organization: "Hawassa university",
       period: "2020 - 2024",
-      description: "Specialized in Information Systems and Software Development. Completed relevant coursework in databases, networking, and web technologies.",
+      description: "Specialized in Information Systems and Software Development with focus on database design, system architecture, and enterprise web applications. Completed comprehensive coursework in SQL, JavaScript, React, and cloud computing technologies.",
       type: "edu" as const,
     },
     {
@@ -70,9 +70,9 @@ const Timeline: React.FC = () => {
     },
     {
       title: "Bachelor of Business Management",
-      organization: "University Name",
+      organization: "Gokden starts",
       period: "2020 - 2024",
-      description: "Studied Business Management principles, organizational leadership, and strategic management techniques.",
+      description: "Advanced Business Management program focusing on strategic leadership, organizational behavior, and innovative business solutions. Developed expertise in project management, financial analysis, and entrepreneurial strategies.",
       type: "edu" as const,
     },
   ]);

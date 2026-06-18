@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
           <motion.div variants={childVariants} className="flex items-center gap-2 mb-6">
             <div className="w-10 h-[2px] bg-[#E74C3C]" />
             <span className="text-[#E74C3C] font-semibold tracking-widest uppercase">
-              Open for Opportunities
+              Available for Opportunities
             </span>
           </motion.div>
 
@@ -46,17 +46,14 @@ const Hero: React.FC = () => {
             variants={childVariants}
             className="text-5xl md:text-8xl font-black leading-[1.1] mb-8 tracking-tighter"
           >
-            Innovative <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E74C3C] via-white to-gray-500">
-              Problem Solver.
-            </span>
+            Know you update on bachelor of information system
           </motion.h1>
 
           <motion.p 
             variants={childVariants}
             className="text-gray-400 text-lg md:text-2xl mb-12 max-w-lg leading-relaxed font-light"
           >
-            Transforming ideas into elegant, high-performance digital solutions. Specialized in full-stack development with a passion for clean code and exceptional user experiences.
+            Passionate Information Systems professional specializing in software development, database design, and innovative web solutions. Committed to creating impactful digital experiences that bridge technology and business excellence.
           </motion.p>
           
           <motion.div variants={childVariants} className="flex flex-wrap gap-6 items-center">
@@ -64,7 +61,7 @@ const Hero: React.FC = () => {
               href="#projects"
               className="px-10 py-5 bg-[#E74C3C] text-white font-black rounded-full flex items-center gap-3 hover:scale-105 active:scale-95 transition-all shadow-[0_10px_30px_-10px_rgba(231,76,60,0.5)]"
             >
-              VIEW PORTFOLIO
+              PROJECTS
               <ArrowRight className="group-hover:translate-x-1 transition-transform" size={22} />
             </a>
             <div className="flex gap-6 items-center">
@@ -99,9 +96,12 @@ const Hero: React.FC = () => {
             
             <div className="w-full h-full overflow-hidden rounded-2xl shadow-2xl bg-[#0a0a0a]">
               <img
-                src="/profile.jpg"
+                src="/7043-removebg-preview.jpg"
                 alt="Profile"
                 className="w-full h-full object-cover"
+                onError={(e) => {
+                  console.error('Image failed to load from:', e.currentTarget.src);
+                }}
               />
             </div>
 
